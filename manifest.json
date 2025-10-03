@@ -1,20 +1,28 @@
-﻿{
-  "manifest_version": 3,
-  "name": "UA Spoofer Quick",
-  "version": "1.0",
-  "description": "Click extension icon to select preset UA, use custom (name/domain), or reset to default.",
-  "permissions": ["webRequest", "webRequestBlocking", "storage"],
-  "host_permissions": ["<all_urls>"],
-  "action": {
-    "default_popup": "mainfast.html",
-    "default_title": "UA Spoofer Quick",
-    "default_icon": {
-      "16": "icon16.png",
-      "32": "icon32.png",
-      "48": "icon48.png",
-      "64": "icon64.png",
-      "128": "icon128.png"
-    }
-  },
-  "background": { "service_worker": "background.js" }
+{
+  "manifest_version": 3,
+  "name": "UA Spoofer Quick",
+  "version": "1.0",
+  "description": "Click extension icon to select preset UA, use custom (name/domain), or reset to default.",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "UA Spoofer Quick",
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "64": "icon64.png",
+      "128": "icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
 }
